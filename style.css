@@ -1,10 +1,31 @@
-#div-id {
-  height: 200px;
-  width: 200px;
+html {
+  font-size: 20px;
+  /*rem is relative to root document's element*/
+}
+p {
+  font-size: 14px;
+  line-height: 1.5em;
+  /*em is realtive to the font-size of immediate parent or trageted element*/
+}
+#div-id-01 {
+  height: 20rem; /*320*/ /* ! rem = 16px */
+  /* 75vh; */ /*viewport-height : visible height in the browser*/
+  /* 300px; */
+  width: 30rem; /*480*/
+  /* 75vw; */
+  /* 400px; */
   background-color: blue;
   background-color: #15dc64;
   background-color: rgb(240, 148, 365);
   background-color: rgba(240, 148, 365, 0.2);
   background-color: hsla(337, 84%, 46%, 0.567);
   background-color: hsl(340, 65%, 25%);
+}
+
+#div-id-02 {
+  height: 50%;
+  /* 150px; */
+  width: 50%;
+  /* 200px; */
+  background-color: aquamarine;
 }
