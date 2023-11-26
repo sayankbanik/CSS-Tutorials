@@ -1,0 +1,51 @@
+span {
+  display: block;
+  background-color: rgb(115, 115, 208);
+  margin: 50px 0;
+  /*in this case margin property work as desired
+  because inline elment behaves as a block as display property changed
+  we can notice verticle margin of 50 px around the both element*/
+  padding: 0;
+  color: red;
+}
+
+#div-id1 {
+  height: 300px;
+  width: 300px;
+  background-color: green;
+}
+#div-id2 {
+  height: 300px;
+  width: 300px;
+  background-color: red;
+}
+/*
+now if i want to make these above 2 divs inline
+it's not possible because we can't define the height and
+width of a inline element as well as vertical margin and padding*/
+/*An Inline element's height and width are always adjusted by it's content size*/
+div {
+  /* display: inline; */
+  display: inline-block;
+  margin: -4px; /*It will close the space between two divs inline position*/
+}
+/*inline-block is a value of display property which holds 
+the property of inline elements like put content in sameline, word-spacing
+and by this we can also control the height width margin padding of elemnt like block elemnt*/
+#visible {
+  visibility: visible;
+}
+#hidden {
+  visibility: hidden;
+}
+/* #div-id3 p {
+  display: block;
+} */
+#red {
+  color: red;
+  display: inline-block;
+}
+#blue {
+  color: blue;
+  display: inline;
+}
