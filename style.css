@@ -2,7 +2,7 @@ html {
   font-size: 20px;
   /*rem is relative to root document's element*/
 }
-p {
+#div-id {
   font-size: 14px;
   line-height: 1.5em;
   /*em is realtive to the font-size of immediate parent or trageted element*/
@@ -48,4 +48,29 @@ p {
   /* border-left: 10px dotted rgb(4, 0, 255); */
   border: 2px dashed red;
   border-left: 10px dashed rgb(4, 0, 255);
+}
+
+#div-id-03 a {
+  font-weight: bold;
+  text-decoration: none; /*removes the underline from a link*/
+}
+
+#outer-div-2 {
+  height: 200px;
+  width: 200px;
+  background-color: coral;
+  /* margin: 10px; */
+}
+#outer-div-1 {
+  height: 200px;
+  width: 200px;
+  /* width: 50%; */
+  background-color: blue;
+  margin-bottom: 10px;
+}
+#inner-div {
+  height: 50%;
+  width: 50%;
+  background-color: aqua;
+  /* margin: auto; */
 }
