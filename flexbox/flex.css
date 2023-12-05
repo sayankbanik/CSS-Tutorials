@@ -1,44 +1,54 @@
 #container {
-  /* height: 400px; */
-  /* width: auto; */
-  height: auto;
+  height: 500px;
+  width: 500px;
+  /* height: auto; */
   /* width: 500px; */
-  width: 400px;
+  /* width: 400px; */
   background-color: grey;
-  display: flex;
+  display: flex; /* default flex-direction is row*/
   /* flex-direction: column; */
   /* flex-direction: row; */
-  /* flex-direction: row-reverse; */
+  flex-direction: row-reverse;
   /* flex-direction: column-reverse; */
   /* flex-wrap: wrap; */
   /* flex-wrap: wrap-reverse; */
   /* flex-wrap: nowrap; */
+  /* justify-content: flex-start; */
+  /*changes the alignment according to flex direction*/
+  /* justify-content: flex-end; */
+  /* justify-content: center; */
+  /* justify-content: space-around; */
+  /* adds equal amount of space around the div or both sides of the div */
+  /* justify-content: space-between; */
+  /* justify-content: space-evenly; */
+  /*gives equal space between all elemnts from both end*/
+  /*combnation of flex-direction;flex-wrap;justify-content*/
 }
 #container div {
-  height: 50px;
-  width: 60px;
+  height: 100px;
+  width: 100px;
 }
 #div1 {
   background-color: red;
   /* display: inline-block; */
-  flex-grow: 4;
+  /* flex-grow: 4; */
 }
 #div2 {
   background-color: cyan;
   /* display: inline-block; */
   /* order: -1; */
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 #div3 {
   background-color: green;
   /* display: inline-block; */
   /* order: 3; */
-  flex-shrink: 5;
+  /* flex-shrink: 5; */
 }
 #div4 {
   background-color: orchid;
   /* display: inline-block; */
-  flex-shrink: 5;
+  /* flex-shrink: 5; */
 }
 #div5 {
   background-color: yellowgreen;
