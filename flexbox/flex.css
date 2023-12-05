@@ -1,37 +1,44 @@
 #container {
-  height: 400px;
-  width: auto;
+  /* height: 400px; */
+  /* width: auto; */
+  height: auto;
+  /* width: 500px; */
+  width: 400px;
   background-color: grey;
   display: flex;
   /* flex-direction: column; */
   /* flex-direction: row; */
   /* flex-direction: row-reverse; */
-  flex-direction: column-reverse;
+  /* flex-direction: column-reverse; */
   /* flex-wrap: wrap; */
-  flex-wrap: wrap-reverse;
+  /* flex-wrap: wrap-reverse; */
   /* flex-wrap: nowrap; */
 }
 #container div {
-  height: 200px;
-  width: 200px;
+  height: 50px;
+  width: 60px;
 }
 #div1 {
   background-color: red;
   /* display: inline-block; */
+  flex-grow: 4;
 }
 #div2 {
   background-color: cyan;
   /* display: inline-block; */
   /* order: -1; */
+  flex-grow: 1;
 }
 #div3 {
   background-color: green;
   /* display: inline-block; */
   /* order: 3; */
+  flex-shrink: 5;
 }
 #div4 {
   background-color: orchid;
   /* display: inline-block; */
+  flex-shrink: 5;
 }
 #div5 {
   background-color: yellowgreen;
