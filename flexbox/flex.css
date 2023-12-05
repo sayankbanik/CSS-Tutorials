@@ -6,9 +6,9 @@
   /* width: 400px; */
   background-color: grey;
   display: flex; /* default flex-direction is row*/
-  /* flex-direction: column; */
+  flex-direction: column;
   /* flex-direction: row; */
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
   /* flex-direction: column-reverse; */
   /* flex-wrap: wrap; */
   /* flex-wrap: wrap-reverse; */
@@ -16,34 +16,50 @@
   /* justify-content: flex-start; */
   /*changes the alignment according to flex direction*/
   /* justify-content: flex-end; */
-  /* justify-content: center; */
+  justify-content: center;
   /* justify-content: space-around; */
   /* adds equal amount of space around the div or both sides of the div */
   /* justify-content: space-between; */
   /* justify-content: space-evenly; */
   /*gives equal space between all elemnts from both end*/
   /*combnation of flex-direction;flex-wrap;justify-content*/
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+  align-items: center;
+  /* align-items: stretch; */
+  /* align-items: baseline; */
+  /* combination of justify-elment and align-items */
 }
 #container div {
   height: 100px;
+  /*setting height as a auto to understand how stretch works whrn flex-direction is row*/
+  /* height: auto; */
+  /* max-height: 300px; */
   width: 100px;
+  /*setting width as a auto to understand how stretch works whrn flex-direction is column*/
+  /* width: auto; */
+  /* max-width: 300px; */
 }
+/* adding margin to all divs to understand baseline alignment */
 #div1 {
   background-color: red;
   /* display: inline-block; */
   /* flex-grow: 4; */
+  /* margin: 10px; */
 }
 #div2 {
   background-color: cyan;
   /* display: inline-block; */
   /* order: -1; */
   /* flex-grow: 1; */
+  /* margin: 20px; */
 }
 #div3 {
   background-color: green;
   /* display: inline-block; */
   /* order: 3; */
   /* flex-shrink: 5; */
+  /* margin: 60px; */
 }
 #div4 {
   background-color: orchid;
