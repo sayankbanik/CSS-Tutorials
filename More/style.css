@@ -1,0 +1,128 @@
+#container-01 {
+  width: 30px;
+  height: auto;
+  border: 2px solid black;
+
+  /* as the width is fixed content is overfloeing out of the div */
+
+  overflow-wrap: break-word;
+  /*break-word breaks the text to wrap in the container*/
+  /* overflow-wrap : normal */
+}
+#container-02 {
+  /*gradient*/
+  width: 300px;
+  height: 300px;
+  border: 2px solid black;
+  background-image: repeating-linear-gradient(45deg, red, blue 25%, green 50%);
+  /* background: linear-gradient(yellow, green); */
+}
+/* #container-03 a:link {
+  color: yellow;
+} */
+/* a {
+  color: green;
+} */
+/* #container-03 p:active {
+  background-color: orange;
+  color: red;
+}
+#container-03 a:active {
+  color: cyan;
+}
+/* #container-03 p:visited {
+  background-color: yellow;
+  color: yellow;
+} */
+#container-03 a:visited {
+  color: green;
+}
+#container-01:target {
+  background-color: yellowgreen;
+}
+#container-04 {
+  /* display: none; */
+  position: fixed;
+  /*position set as fixed so it can appear on the elment*/
+  width: 0px;
+  height: 0px;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: all 2s ease-in-out;
+  /* background-color: lightblue; */
+  /* transition: width 10s ease-in-out, height 10s ease-in-out; */
+  /* opacity: 0.3; */
+  /* transition: opacity 1s ease-in-out; */
+}
+#container-04:target {
+  /* display: block; */
+  height: 200px;
+  width: 200px;
+  background-color: skyblue;
+  border: 2px solid blue;
+  /* margin: auto; */
+  margin-top: 25%;
+  margin-left: 25%;
+  /* transform: rotate(180deg); */
+  color: #f77656;
+}
+
+/*pseudo-elements*/
+
+#pseudoelements p {
+  color: blue;
+  /*This will applicable in pseudoelements as well as they are also part of this content*/
+  background-color: lightblue;
+}
+#pseudoelements p::before {
+  content: "I am Before ";
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+#pseudoelements p::after {
+  content: " I am After ";
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+/*whatever content will be added for "after" pseudoelemnts become inline*/
+#pseudo-image p::after {
+  content: "";
+  /*content property can not be skipped*/
+  display: inline-block;
+  height: 50px;
+  width: 60px;
+  background-size: cover;
+  background-image: url(souma-image.jpg);
+}
+
+.quoted-text p span::before {
+  content: "''";
+}
+.quoted-text p span::after {
+  content: "''";
+}
+
+#pseudo-list li {
+  list-style: none;
+}
+#pseudo-list li::before {
+  content: "";
+  display: inline-block;
+  height: 30px;
+  width: 60px;
+  background-size: contain;
+  background-image: url(souma-image.jpg);
+}
+
+p::first-line {
+  font-size: 1rem;
+  font-family: monospace;
+}
+p.name::first-letter {
+  font-size: 2rem;
+  color: orange;
+}
